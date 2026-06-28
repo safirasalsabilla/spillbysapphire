@@ -54,10 +54,21 @@
             text-decoration: underline;
         }
         .container {
-            max-width: 1200px;
+    width: 100%; /* Lebar menyesuaikan layar */
+    max-width: 1200px; /* Lebar maksimal pada layar besar */
+    margin: 0 auto;
+        /*--max-width: 1200px;
             margin: 20px auto;
-            padding: 20px;
+            padding: 20px;*/
         }
+        .row {
+    display: flex;
+    flex-wrap: wrap; /* Elemen turun ke bawah jika layar sempit */
+}
+.col {
+    flex: 1; /* Lebar kolom membagi rata layar */
+    min-width: 300px; /* Lebar minimal sebelum turun baris */
+}
         .grid {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
