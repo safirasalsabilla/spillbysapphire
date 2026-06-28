@@ -56,10 +56,12 @@
         nav a:hover {
             text-decoration: underline;
             list-style: none;
-            display: flex;
         }
         /* Responsif */
         @media (max-width: 768px) {
+             nav ul {
+                flex-direction: column;
+            }
             
         .container {
             width: 1000px; /* Lebar menyesuaikan layar */
